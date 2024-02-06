@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ajcController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ajcController::class, 'homepage'])->name('homepage');
+Route::get('/internetplans', [ajcController::class, 'internet'])->name('internetplans');
+Route::get('/internetpromos', [ajcController::class, 'promos'])->name('internetpromos');
+Route::get('/contactus', [ajcController::class, 'contactus'])->name('contactus');
+Route::get('/applynow', [ajcController::class, 'applynow'])->name('applynow');
+Route::get('/login', [ajcController::class, 'login'])->name('login');
