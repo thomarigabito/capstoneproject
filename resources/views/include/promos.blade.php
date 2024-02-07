@@ -3,4 +3,5 @@
 
 @section('content')
     <h1>This is Promo page</h1>
+@include('footer')
 @endsection

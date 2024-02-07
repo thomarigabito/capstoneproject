@@ -1,6 +1,5 @@
 @extends('layout')
 @section('title', 'AJC-Internet')
-
 @section('content')
 
 {{-- SIR Thom... Dito ka lagay nung pang landing page sir.
@@ -88,17 +87,5 @@ no header and footer pls. Thanks.. --}}
     </div>
 
 
-    <h1>This is Homepage</h1>
-
-
-
-
-
-
-
-
-
-
-
-
+@include('footer')
 @endsection
