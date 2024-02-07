@@ -10,6 +10,9 @@
     .nav-link.active{
         color: red !important;
     }
+    .login.active{
+        color: red !important;
+    }
     .nav-link{
         font-size: 20px;
         text-align: center;
@@ -27,6 +30,9 @@
         text-decoration: underline;
         color: white;
     }
+    /* .form-control{
+        border: none;
+    } */
 
     .banner{
     display: flex;
