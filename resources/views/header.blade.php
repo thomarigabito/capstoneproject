@@ -32,7 +32,7 @@
             <span>{{auth()->user()->firstname}} {{auth()->user()->lastname}}</span>
             <span class="text-end"><a href="">Logout</a></span>
           @else
-            <a class="login text-center" href="{{route('login')}}">Login</a>
+            <a class="login text-center {{ (\Request::route()->getName() == 'login') ? 'active' : '' }}" href="{{route('login')}}">Login</a>
           @endauth
         </div>
       </div>
