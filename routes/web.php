@@ -19,4 +19,6 @@ Route::get('/internetplans', [ajcController::class, 'internet'])->name('internet
 Route::get('/internetpromos', [ajcController::class, 'promos'])->name('internetpromos');
 Route::get('/contactus', [ajcController::class, 'contactus'])->name('contactus');
 Route::get('/applynow', [ajcController::class, 'applynow'])->name('applynow');
+Route::post('/applynow', [ajcController::class, 'applynowPOST'])->name('applynowPOST');
 Route::get('/login', [ajcController::class, 'login'])->name('login');
+Route::get('/register', [ajcController::class, 'register'])->name('register');
