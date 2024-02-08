@@ -1,13 +1,42 @@
 @extends('layout')
 @section('title', 'AJC-Internet')
-
 @section('content')
 
-{{-- SIR Thom... Dito ka lagay nung pang landing page sir.
-wala na header ha? na include ko na kasi.
-no header and footer pls. Thanks.. --}}
 
-    <section class="title">
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">
+            We’re here to help you.
+        </h1>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 bg-info text-center">
+            <h1>Chat with Us !</h1>
+            <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
+            <button>UJC Chatbot</button>
+        </div>
+        <div class="col-12 col-md-6 bg-secondary mt-2 mt-lg-0 mt-md-0 text-center">
+            <h1>Chat with Us !</h1>
+            <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
+            <button>UJC Chatbot</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {{-- <section class="title">
         <h1>We’re here to help you.</h1>
     </section>
 
@@ -85,18 +114,7 @@ no header and footer pls. Thanks.. --}}
                 <h1>200 Mbps</h1>
             </div>
         </section>
-    </div>
-
-
-    <h1>This is Homepage</h1>
-
-
-
-
-
-
-
-
+    </div> --}}
 
 
 
