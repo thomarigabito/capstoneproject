@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    {{-- Font-Family --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'AJC')</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", serif;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            background: transparent;
+            font-weight: 500;
+        }
+
         .nav-link.active {
             color: red !important;
         }
@@ -43,238 +68,80 @@
     } */
 
 
-        /* Start homepage.blade CSS style */
-        h1,
-        h2,
-        h3.h4,
-        p {
-            background: transparent;
-        }
+    /* Start homepage.blade CSS style */
+    .head{
+        width: 100%;
+        height: 50vh;
+        padding: 55px 0;
+        background-image: linear-gradient(rgba(218, 194, 178, 0.719), rgba(111, 78, 82, 0.259)), url(./assets/head.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        color: #fefefe
+    }
+    .Fiber_Experience {
+        background: #e35b53;
+        color: #FEFEFE;
+        padding: 40px 0;
+        font-weight: 600;
 
-        .title {
-            padding: 40px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(162, 162, 162, 0.134);
-        }
+    }
+    .bundle {
+        display: table-cell;
+        vertical-align: right;
+        width: 4rem;
+    }
+    .fa-signal,.fa-film,.fa-wifi{
+        font-size: 25px;
+    }
+    .text {
+        font-size: 22px;
+        color: #FEFEFE;
+        font-weight: 900;
+        letter-spacing: 1px;
+    }
+    .text_title {
+        padding: 0;
+        background: rgba(226, 225, 223, 0.56);
+    }
+    .chat {
+        background-color: #F8EFE6;
+    }
+    .support {
+        background-color: #F3EED8;
+    }
+    .plan {
+        position: relative;
+        width: 100%;
+        height: 250px;
+    }
+    .plan::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url(./assets/familyinternet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: .5;
+    }
+    .center_bundle{
+        border-right: 1px #fefefe solid;
+        border-left: 1px #fefefe solid;
+    }
 
-        .title h1 {
-            font-size: 38px;
-            color: #c43a3c;
-            background-color: transparent;
+    @media screen and (max-width: 768px) {
+        .center_bundle{
+            border-right:none;
+            border-left:none;
+            border-top:1px #fefefe solid;
+            border-bottom:1px #fefefe solid;
         }
-
-        .banner {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-
-        .chat {
-            width: 50%;
-            align-items: center;
-            background-color: #F8EFE6;
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .support {
-            align-items: center;
-            width: 50%;
-            background-color: #F3EED8;
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .bannerbtn {
-            background: transparent;
-        }
-
-        .bannerbtn button {
-            margin: 18px 0 0;
-            padding: .50em .30em;
-            font-size: 16px;
-            border-radius: 25px;
-            width: 178px;
-            border: none;
-            outline: none;
-            background-color: #c43a3c;
-            color: #fff;
-            font-size: 17px;
-            text-transform: uppercase;
-            justify-items: center;
-        }
-
-        .btnicon {
-            background: transparent;
-            padding: 0 .5em 0 0;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .banner {
-                display: block
-            }
-
-            .chat,
-            .support {
-                width: 100%
-            }
-        }
-
-
-        .title_info {
-            padding: 35px 0;
-            font-size: 25px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            text-wrap: wrap;
-            width:1000px;
-            margin: auto
-        }
-
-        .info {
-            display: flex;
-            width: 100%;
-            justify-content: space-around;
-            background: #d2cac24c
-        }
-
-        .info1,.info2,.info3 {
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-
-        }
-
-        .info1>img, .info2>img, .info3>img{
-            padding: 30px;
-        }
-        .infos p {
-            font-weight: lighter;
-        }
-
-        @media only screen and (max-width: 769px) {
-            .title_info {
-                padding: 10px;
-                font-size: 18px;
-                width:90%;
-            }
-            .info {
-            display: block;
-            width: 100%;
-            margin: auto;
-            text-align: center;
-            }
-            .info1>img, .info2>img, .info3>img{
-            padding: 10px;
-            }
-        }
-
-
-
-        .plans_container {
-            display: flex;
-            width: 100%;
-        }
-
-        .promos {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            border: 1px solid black;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .promo_title {
-            text-align: center;
-            padding: 10px 0;
-        }
-        .promo_title h1 {
-            text-align: center;
-            font-weight: bolder;
-            font-size:26px;
-        }
-
-        .plans {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 45px;
-            grid-row-gap: 10px;
-            padding: 10px;
-        }
-
-        .plan1,
-        .plan2,
-        .plan3,
-        .plan4 {
-            padding: 20px;
-            width: 200px;
-            background-color: rgba(205, 205, 205, 0.214);
-            border: .10em solid rgba(122, 122, 122, 0.426);
-            border-radius: 20px;
-        }
-
-        .mbps {
-            font-size: 30px;
-        }
-
-        .promo_details {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(22, 21, 25, 0.7)), url(assets/familyinternet.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-            width: 50%;
-            padding: 20px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .promos {
-            padding:10px
-            }
-        .plan1,
-        .plan2,
-        .plan3,
-        .plan4 {
-            padding: 10px;
-            width: 135px;
-            background-color: rgba(205, 205, 205, 0.214);
-            border: .10em solid rgba(122, 122, 122, 0.426);
-            border-radius: 20px;
-        }
-        .plans {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 5px;
-            padding: 45px;
-        }
-        .mbps {
-            font-size: 20px;
-        }
-        .promo_title h1{
-            font-size: 21px;
-        }
-        }
+    }
 
         /* End homepage.blade CSS style */
     </style>
