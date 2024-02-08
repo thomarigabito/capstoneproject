@@ -1,5 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg px-3 container-fluid ">
         <a class="navbar-brand" href="{{route('homepage')}}">
             <img class="logo" src="./assets/agclogo.png" style="width:120px;">
         </a>
@@ -32,9 +31,8 @@
             <span>{{auth()->user()->firstname}} {{auth()->user()->lastname}}</span>
             <span class="text-end"><a href="">Logout</a></span>
           @else
-            <a class="login text-center {{ (\Request::route()->getName() == 'login') ? 'active' : '' }}" href="{{route('login')}}">Login</a>
+            <a class="login text-center {{ (\Request::route()->getName() == 'login') ? 'active' : '' }}" href="{{route('login')}}"><i class="fa-solid fa-user"></i>Login</a>
           @endauth
         </div>
       </div>
-    </div>
   </nav>
