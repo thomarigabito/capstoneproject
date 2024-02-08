@@ -3,9 +3,7 @@
   <div class="container p-4">
     <section>
       <form action="">
-        <!-- Grid row -->
         <div class="row d-flex justify-content-center">
-          <!-- Grid column -->
           <div class="col-auto">
             <p class="pt-2">
               <strong>Subscribe to our newsletter</strong>
