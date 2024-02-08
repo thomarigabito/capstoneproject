@@ -30,7 +30,7 @@ class ajcController extends Controller
 
 
 
-    
+
     // function loginPost(Request $request){
     //     $request->validate([
     //         'email' => 'required',
@@ -59,8 +59,8 @@ class ajcController extends Controller
             'landmark' => 'required',
             'uploadid' => 'required',
             'idselfie' => 'required'
-            
-            
+
+
         ]);
         $data['firstname'] = $request->firstname;
         $data['middlename'] = $request->middlename;
@@ -81,6 +81,6 @@ class ajcController extends Controller
     }
 
 
-    
+
 
 }

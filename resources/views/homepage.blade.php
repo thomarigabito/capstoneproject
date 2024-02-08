@@ -1,6 +1,5 @@
 @extends('layout')
 @section('title', 'AJC-Internet')
-
 @section('content')
 
     {{-- SIR Thom... Dito ka lagay nung pang landing page sir.
@@ -98,6 +97,9 @@ no header and footer pls. Thanks.. --}}
                 <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-circle-question btnicon"></i>Go to
                     Support</button>
 
+
+
+
             </div>
         </div>
     </div>
@@ -180,5 +182,6 @@ no header and footer pls. Thanks.. --}}
     </div>
 
 
+@include('footer')
 
 @endsection
