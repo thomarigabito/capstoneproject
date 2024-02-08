@@ -28,10 +28,15 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-12 mt-md-1 p-1">
-                            <input type="text" name="birthday" class="form-control" required placeholder="Birthday"/>
+                            <input type="date" name="birthday" class="form-control" required placeholder="Birthday"/>
                         </div>
                         <div class="col-lg-4 col-md-12 mt-md-1 p-1">
-                            <input type="text" name="gender" class="form-control" required placeholder="Gender"/>
+                            <select class="form-control"required>
+                                <option value="">Gender</option>
+                                <option value="option1">Male</option>
+                                <option value="option2">Female</option>
+                            </select>
+                            {{-- <input type="text" name="gender" class="form-control" required placeholder="Gender"/> --}}
                         </div>
                         <div class="col-lg-4 col-md-12 mt-md-1 p-1">
                             <input type="text" name="plan" class="form-control" required placeholder="Plan"/>
