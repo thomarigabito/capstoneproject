@@ -82,10 +82,6 @@
             color: rgb(0, 0, 0);
         }
 
-        /* .form-control{
-        border: none;
-    } */
-
 
         /* Start homepage.blade CSS style */
         .head {
@@ -172,6 +168,24 @@
                 border-top: 1px #fefefe solid;
                 border-bottom: 1px #fefefe solid;
             }
+        }
+
+        .faq{
+            background: rgba(189, 70, 70, 0.685);
+            width: 100%
+        }
+        .accordion-button{
+            background: transparent;
+            outline: none;
+            border-radius:0;
+            border: none;
+        }
+        .accordion-item{
+            background: transparent;
+            border: none;
+            border-bottom: 1px #333 solid;
+            outline: none;
+            border-radius: 0;
         }
 
         /* End homepage.blade CSS style */
