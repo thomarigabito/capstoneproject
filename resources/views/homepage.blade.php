@@ -36,7 +36,7 @@
 
 
 
-    {{-- <section class="title">
+    <section class="title">
         <h1>We’re here to help you.</h1>
     </section>
 
@@ -114,7 +114,7 @@
                 <h1>200 Mbps</h1>
             </div>
         </section>
-    </div> --}}
+    </div>
 
 
 
