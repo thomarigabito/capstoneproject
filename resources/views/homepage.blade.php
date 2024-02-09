@@ -82,24 +82,7 @@ no header and footer pls. Thanks.. --}}
         </div>
     </div>
 
-    <h1 class="col text-center mb-0 p-5  text_title ">We’re here to help you.</h1>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 p-2 text-center chat">
-                <h1>Chat with Us !</h1>
-                <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
-                <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-comments btnicon"></i>UJC
-                    Chatbot</button>
-            </div>
-            <div class="col-12 col-md-6 p-2  text-center support">
-                <h1>Support</h1>
-                <p>We’ll find the best solution for you.</p>
-                <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-circle-question btnicon"></i>Go to
-                    Support</button>
-
-            </div>
-        </div>
-    </div>
+      </div>
     <div class="container-fluid">
         <h1 class="col-8 text-center align-items-center m-auto p-2  ">We’ve got you covered with reliable internet that’s
             right for your home.</h1>
@@ -125,46 +108,87 @@ no header and footer pls. Thanks.. --}}
     </div>
 
 
-    <div class="row accordion px-5 py-5" id="accordionExample">
-    <div class="col-12 col-md-6">
-<div class="accordion-item col-3">
-<h2 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-Accordion Item #1
-</button>
-</h2>
-<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-</div>
-</div>
-</div>
-<div class="accordion-item col-3">
-<h2 class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-Accordion Item #2
-</button>
-</h2>
-<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-</div>
-</div>
-</div>
-<div class="accordion-item col-3">
-<h2 class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-Accordion Item #3
-</button>
-</h2>
-<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-<div class="accordion-body">
-<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-</div>
-</div>
-</div>
-</div>
-</div>
 
+    <div>
+      <h1 class="col text-center mb-0 p-5  text_title ">We’re here to help you.</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 p-2 text-center chat">
+                <h1>Chat with Us !</h1>
+                <p>Use our AJC Pisonet FB Messenger for quick and easy assistance.</p>
+                <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-comments btnicon"></i>UJC
+                    Chatbot</button>
+            </div>
+            <div class="col-12 col-md-6 p-2  text-center support">
+                <h1>Support</h1>
+                <p>We’ll find the best solution for you.</p>
+                <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-circle-question btnicon"></i>Go to
+                    Support</button>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid faq py-5 px-5">
+        <h3>FAQ</h3>
+        <div class="row accordion" id="accordionFAQ">
+            <div class="col-12 col-sm-10 col-md-10">
+                <div class="accordion-item col">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What are included in the AJC Internet plans?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            All our plan offers come with free WiFi modem (DSL, Fibre and LTE bundled plans) and monthly
+                            volume allowance. Plans starting at 1299 and above also have a free landline with unlimited
+                            calls to any Globe or TM numbers, and 6-month access to Amazon Prime Video.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed accordion-button-fucos-box-shadow:none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is monthly data allowance?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            It's the amount of data that you can use according to the broadband plan you subscribed to. Your
+                            allowance is measured in gigabytes (GB) and is used up based on how much data your internet
+                            activities consume.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed accordion-button-fucos-box-shadow:none " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How do you apply the Fair Use Policy to your broadband service?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Globe At Home was designed to provide you consistently fast and reliable broadband service for a
+                            steady browsing experience in the convenience of your home. It lets you stream data and download
+                            large files, but if you use this service other than its intent as mentioned, you may experience
+                            slow browsing.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+@include('footer')
 
 @endsection

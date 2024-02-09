@@ -31,8 +31,8 @@
         </ul>
         <div class="userArea d-flex flex-column">
           @auth
-            <span>{{auth()->user()->firstname}} {{auth()->user()->lastname}}</span>
-            <span class="text-end"><a href="">Logout</a></span>
+            <span>{{auth()->user()->name}} {{auth()->user()->lastname}}</span>
+            <span class="text-end"><a href="{{route('logout')}}">Logout</a></span>
           @else
             <a class="login text-center {{ (\Request::route()->getName() == 'login') ? 'active' : '' }}" href="{{route('login')}}"><i class="fa-solid fa-user"></i>Login</a>
           @endauth
