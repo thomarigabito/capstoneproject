@@ -175,7 +175,7 @@
         }
 
         .faq{
-            background: rgba(189, 70, 70, 0.685);
+            background: rgba(232, 118, 118, 0.589);
             width: 100%
         }
         .accordion-button{
@@ -190,6 +190,14 @@
             border-bottom: 1px #333 solid;
             outline: none;
             border-radius: 0;
+        }
+        .accordion-button:focus{
+            background: transparent;
+            box-shadow: none
+        }
+        .accordion-button:active{
+            background: transparent;
+            box-shadow: none;
         }
 
         /* End homepage.blade CSS style */

@@ -8,9 +8,9 @@
                 <form action="">
                     <h3 class="text-center mb-3">Login</h3>
                     <label for="email">Email address</label>
-                    <input type="text" class="form-control" name="email" required />
+                    <input type="email" class="form-control" name="email" required />
                     <label for="password">Password</label>
-                    <input type="text" class="form-control" name="password" required />
+                    <input type="password" class="form-control" name="password" required />
                     <button type="submit" class="form-control btn btn-primary mt-3 mb-2">Login</button>
                     <div class="row mt-3">
                         <div class="col-12">
