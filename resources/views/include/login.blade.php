@@ -3,6 +3,23 @@
 
 @section('content')
     <div class="container">
+        @if($errors->any())
+            <div>
+                @foreach($errors->all() as $error)
+                    <div class="alert alert-danger">{{$error}}</div>
+                @endforeach
+            </div>
+        @endif
+
+        @if(session()->has('error'))
+            <div class="alert alert-danger">{{session('error')}}</div>
+        @endif
+
+        @if(session()->has('success'))
+            <div class="alert alert-succes">{{session('success')}}</div>
+        @endif
+    </div>
+    <div class="container">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col col-lg-4 col-md-6 border rounded shadow p-4">
                 <form action="{{route('login.post')}}" method="POST">

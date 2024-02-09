@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,20 +41,22 @@
             background: transparent;
             font-weight: 500;
         }
-        nav{
+
+        nav {
             background: rgba(146, 125, 125, 0.35);
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 20px );
-            -webkit-backdrop-filter: blur( 20px );
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
+
         .nav-link.active {
             color: red !important;
         }
 
         .login.active {
-            color: red !important;
+            color: rgb(39, 34, 34) !important;
         }
 
         .nav-link {
@@ -174,28 +177,32 @@
             }
         }
 
-        .faq{
+        .faq {
             background: rgba(232, 118, 118, 0.589);
             width: 100%
         }
-        .accordion-button{
+
+        .accordion-button {
             background: transparent;
             outline: none;
-            border-radius:0;
+            border-radius: 0;
             border: none;
         }
-        .accordion-item{
+
+        .accordion-item {
             background: transparent;
             border: none;
             border-bottom: 1px #333 solid;
             outline: none;
             border-radius: 0;
         }
-        .accordion-button:focus{
+
+        .accordion-button:focus {
             background: transparent;
             box-shadow: none
         }
-        .accordion-button:active{
+
+        .accordion-button:active {
             background: transparent;
             box-shadow: none;
         }

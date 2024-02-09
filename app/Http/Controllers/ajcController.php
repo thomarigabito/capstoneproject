@@ -87,10 +87,10 @@ class ajcController extends Controller
         }
         return redirect(route('login'))->with("success", "Please login to continue");
         }
-        function logout()
-        {
-            Session::flush();
-            Auth::logout();
-            return redirect(route('login'));
-        }
+        // function logout()
+        // {
+        //     Session::flush();
+        //     Auth::logout();
+        //     return redirect(route('login'));
+        // }
 }
