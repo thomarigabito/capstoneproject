@@ -69,7 +69,7 @@
             background: #e35b53;
             padding: 5px;
             border-radius: 20px;
-            width: 100px
+            width: 100px;
         }
 
         .fa-user {

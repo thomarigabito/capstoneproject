@@ -11,6 +11,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Bill</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
           @else
             <li class="nav-item">
               <a class="nav-link {{ (\Request::route()->getName() == 'internetplans') ? 'active' : '' }}" href="{{route('internetplans')}}">Internet</a>

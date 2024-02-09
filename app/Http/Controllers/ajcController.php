@@ -42,38 +42,7 @@ class ajcController extends Controller
     //     }
     //     return redirect(route('login'))->with("error", "Email and password does not match");
     // }
-    function applynowPOST(Request $request){
-        $request->validate([
-            'firstname' => 'required',
-            'middlename' => 'required',
-            'lastname' => 'required',
-            'contact' => 'required',
-            'birthday' => 'required',
-            'gender' => 'required',
-            'plan' => 'required',
-            'email' => 'required|email',
-            'street' => 'required',
-            'barangay' => 'required',
-            'town' => 'required',
-            'province' => 'required',
-            'landmark' => 'required',
-            'uploadid' => 'required',
-            'idselfie' => 'required'
-            
-            
-        ]);
-        $data['firstname'] = $request->firstname;
-        $data['middlename'] = $request->middlename;
-        $data['lastname'] = $request->lastname;
-        $data['email'] = $request->email;
-        $data['password'] = Hash::make($request->password);
-
-        $user = User::create($data);
-        if(!$user){
-            return redirect(route('registration'))->with("error", "Registration failed, please try again");
-        }
-        return redirect(route('login'))->with("success", "Please login to continue");
-    }
+    
     function logout(){
         Session::flush();
         Auth::logout();

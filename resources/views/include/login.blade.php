@@ -5,7 +5,25 @@
     <div class="container">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col col-lg-4 col-md-6 border rounded shadow p-4">
+                <div class="mt-5">
+                    @if($errors->any())
+                        <div class="col-12">
+                            @foreach($errors->all() as $error)
+                            <div class="alert alert-danger">
+                                {{$error}}
+                            </div>
+                            @endforeach
+                        </div>
+                    @endif
+                    @if(session()->has('error'))
+                        <div class="alert alert-danger">{{session('error')}}</div>
+                    @endif
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">{{session('success')}}</div>
+                    @endif
+                </div>
                 <form action="">
+                    @csrf
                     <h3 class="text-center mb-3">Login</h3>
                     <label for="email">Email address</label>
                     <input type="text" class="form-control" name="email" required />
