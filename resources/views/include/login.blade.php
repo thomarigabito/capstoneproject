@@ -5,7 +5,8 @@
     <div class="container">
         <div class="row d-flex justify-content-center mt-5">
             <div class="col col-lg-4 col-md-6 border rounded shadow p-4">
-                <form action="">
+                <form action="{{route('login.post')}}" method="POST">
+                    @csrf
                     <h3 class="text-center mb-3">Login</h3>
                     <label for="email">Email address</label>
                     <input type="email" class="form-control" name="email" required />
