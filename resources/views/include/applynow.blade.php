@@ -4,7 +4,26 @@
 @section('content')
     <div class="container mb-5">
         <div class="row d-flex justify-content-center mt-3">
-            <form action="">
+            <div class="row">
+                <div class="mt-5">
+                    @if($errors->any())
+                        <div class="col-12">
+                            @foreach($errors->all() as $error)
+                            <div class="alert alert-danger">
+                                {{$error}}
+                            </div>
+                            @endforeach
+                        </div>
+                    @endif
+                    @if(session()->has('error'))
+                        <div class="alert alert-danger">{{session('error')}}</div>
+                    @endif
+                    @if(session()->has('success'))
+                        <div class="alert alert-success">{{session('success')}}</div>
+                    @endif
+                </div>
+            <form action="{{route('applynowPOST')}}" method="POST">
+                @csrf
                 <div class="col-md-6 m-auto p-4 border rounded shadow">
                     <h3 class="text-center mb-5">Application Form</h3>
                     <div class="col">
@@ -31,15 +50,20 @@
                             <input type="date" name="birthday" class="form-control" required placeholder="Birthday"/>
                         </div>
                         <div class="col-lg-4 col-md-12 mt-md-1 p-1">
-                            <select class="form-control"required>
+                            <select class="form-control" name="gender" required>
                                 <option value="">Gender</option>
-                                <option value="option1">Male</option>
-                                <option value="option2">Female</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
                             </select>
-                            {{-- <input type="text" name="gender" class="form-control" required placeholder="Gender"/> --}}
                         </div>
                         <div class="col-lg-4 col-md-12 mt-md-1 p-1">
-                            <input type="text" name="plan" class="form-control" required placeholder="Plan"/>
+                            <select class="form-control" name="plan" required>
+                                <option value="">Choose plan</option>
+                                <option value="1500">1500</option>
+                                <option value="1000">1000</option>
+                                <option value="800">800</option>
+                            </select>
                         </div>
                     </div>
                     <div class="row">
