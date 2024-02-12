@@ -1,7 +1,8 @@
 <?php
 
+use App\Mail\MyMailingServices;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ajcController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,25 @@ use App\Http\Controllers\ajcController;
 |
 */
 
-Route::get('/', [ajcController::class, 'homepage'])->name('homepage');
-Route::get('/internetplans', [ajcController::class, 'internet'])->name('internetplans');
-Route::get('/internetpromos', [ajcController::class, 'promos'])->name('internetpromos');
-Route::get('/contactus', [ajcController::class, 'contactus'])->name('contactus');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/applynow', [ajcController::class, 'applynow'])->name('applynow');
-Route::post('/applynow', [ajcController::class, 'applynowPOST'])->name('applynowPOST');
-Route::get('/login', [ajcController::class, 'login'])->name('login');
-Route::post('/login', [AuthManager::class, 'loginPOST'])->name('login.post');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/register', [ajcController::class, 'register'])->name('register');
-Route::post('/register', [AuthManager::class, 'registerPOST'])->name('register.post');
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
 
-Route::get('/;ogout', [AuthManager::class,'logout'])->name('logout');
+require __DIR__.'/auth.php';
+
+
+// To be customize
+Route::get('/testroute', function(){
+    //Send email to anyone
+    Mail::to('tymgabito26@gmail.com')->send (new MyMailingServices('Sir Thom'));
+});

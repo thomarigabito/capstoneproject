@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\applicationModel;
+use Hash;
+use Auth;
 
 class applicationController extends Controller
 {
@@ -48,5 +51,7 @@ class applicationController extends Controller
             return redirect(route('applynow'))->with("error", "Application failed, please try again");
         }
         return redirect(route('applynow'))->with("success", "Application submitted, Please wait for email, text or call");
-    }
+    }      
+        
 }
+
