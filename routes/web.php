@@ -35,5 +35,5 @@ require __DIR__.'/auth.php';
 // To be customize
 Route::get('/testroute', function(){
     //Send email to anyone
-    Mail::to('tymgabito26@gmail.com')->send (new MyMailingServices('Sir Thom'));
+    Mail::to('deepong25@gmail.com')->send (new MyMailingServices('Jupiter'));
 });
